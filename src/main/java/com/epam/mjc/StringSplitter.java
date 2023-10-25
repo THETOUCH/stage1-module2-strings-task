@@ -20,7 +20,7 @@ public class StringSplitter {
         for (String s : delimiters) {
             source = source.replace(s, " ").trim();
         }
-        String[] answer = source.split(" ");
+        String[] answer = source.split(" +");
         return Arrays.asList(answer);
     }
 }
